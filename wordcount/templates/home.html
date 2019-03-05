@@ -1,9 +1,23 @@
-<h1>안녕하세요, 여기서 글자를 치세여</h1>
 
-<a href="{%url 'about'%}">ABOUT</a>
+    <header class="bg-primary text-white">
+      <div class="container text-center">
+        <h1>Welcome to WordCount</h1>
+        <p class="lead">멋쟁이 사자처럼 7기 김유정</p>
+      </div>
+    </header>
 
-<form action="{%url 'result'%}">
-    <textarea cols="40" rows="10" name="fulltext"></textarea>
-    <br>
-    <input type="submit" value="Count!">
-</form>
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>여기서 문장을 입력하세요</h2>
+                <a href="{%url 'about'%}">ABOUT</a>
+                 <form action="{%url 'result'%}">
+                    <textarea cols="40" rows="10" name="fulltext"></textarea>
+                      <br>
+                      <input type="submit" value="Count!">
+              </form>
+          </div>
+        </div>
+      </div>
+    </section>
